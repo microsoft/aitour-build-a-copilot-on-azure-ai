@@ -6,15 +6,14 @@ To help prepare content for AI Tour, please use this template repository for org
 5. If you are taking advantage of the static front end site, edit the content in the _config.yml file as needed (specifically the title and description)
 
 
-# [TODO: Insert Session Title]
-
-This repo is intended as a template for Microsoft AI Tour repositories
+# Build a Retail Copilot Code-First on Azure AI
 
 ## Session Desciption
 
-TODO: Add short description of the session. Please note this description should be at a technical level that anyone from decision makers to conference attendees can understand.
+Use Azure AI Studio to build, evaluate, and deploy a customer support chat app. This custom copilot uses a RAG architecture built with Azure AI Search, Azure CosmosDB and Azure OpenAI to return responses grounded in the product and customer data.
 
 ## Learning Outcomes
+
 TODO: Add a list of what you hope the attendee will take away from this session. This can be skills, technology, appreciation, etc.
 
 ## Technology Used
