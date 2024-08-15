@@ -1,48 +1,55 @@
-To help prepare content for AI Tour, please use this template repository for organizing your sessions and preparing the content for future presentors.
-1. Update this readme with the todo's listed below
-2. The src folder has been created for all development tasks when creating this session
-3. The Lab folder is in-person and async participation with content, please update this folder with instructions for participants to follow along.
-4. The Presenter Notes folder is the train the trainer section. Here add any slide decks, demo videos, and other content as needed. This page has a rough layout to provide ideas but can be edited as needed.
-5. If you are taking advantage of the static front end site, edit the content in the _config.yml file as needed (specifically the title and description)
-
-
 # Build a Retail Copilot Code-First on Azure AI
-
-## Session Desciption
 
 Use Azure AI Studio to build, evaluate, and deploy a customer support chat app. This custom copilot uses a RAG architecture built with Azure AI Search, Azure CosmosDB and Azure OpenAI to return responses grounded in the product and customer data.
 
+## Session Description
+
+In this sample we build, evaluate and deploy a customer support chat AI for Contoso Outdoors, a fictitious retailer who sells hiking and camping equipment. The implementation uses a Retrieval Augmented Generation (RAG) architecture to implement a retail copilot solution that responds to customer queries with answers grounded in the company's product catalog and customer purchase history. The sample uses Azure AI Search to create and manage search indexes for product catalog data, Azure Cosmos DB to store and manage customer purchase history data, and Azure OpenAI to deploy and manage the core models required for our RAG-based architecture.
+By exploring and deploying this sample, you will learn to: Build a retail copilot application using the RAG pattern, define and engineer prompts using the Prompty asset, design, run & evaluate a copilot using the Promptflow framework, provision and deploy the solution to Azure using the Azure Developer CLI, understand and apply Responsible AI practices like evaluation and content safety.
+
 ## Learning Outcomes
 
-TODO: Add a list of what you hope the attendee will take away from this session. This can be skills, technology, appreciation, etc.
+* Use Azure AI Studio as a code-first platform for building custom copilots​
+
+* Prototype custom copilot on VS Code with powerful tools (Prompty, Promptflow, Codespaces)​
+
+* Optimize your custom copilot with manual testing & AI-assisted evaluation (Quality, Safety)​
+
+* Operationalize your custom copilot by deploying to Azure AI Studio (Monitoring, Filters, Logs)​
+
+* Customize the sample to suit your application scenario (data, functions, frameworks, models)
 
 ## Technology Used
-TODO: Add a list of any technology or software used.
+
+* Github Codespaces
+* Azure AI Studio
+* Azure AI Search
+* Cosmos DB
+* OpenAI GPT models
 
 ## Additional Resources and Continued Learning
-TODO: If you would like to link the user to further learning, please enter that here.
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Future Learning 1  | [Link 1](https://www.google.com/) | Learn more about X |
-| Future Learning 2  | [Link 2](https://www.google.com/) | Learn more about Y |
+| contoso-chat  | https://github.com/Azure-Samples/contoso-chat | Complete sample repository from workshop |
+
+## Repository Guide
+
+1. The src folder has been created for all development tasks when creating this session.
+1. The Lab folder is in-person and async participation with content.
+1. The Presenter Notes folder is the train the trainer section. Here you will find slide decks, demo videos, and other content.
 
 ## Content Owners
-TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <table>
 <tr>
     <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://github.com/cole-g-johnson.png" width="100px;" alt="Chris Testa-O'Neill
-"/><br />
-        <sub><b>INSERT NAME HERE
+        <img src="https://media.licdn.com/dms/image/C4D03AQGMiGWZFIRUKw/profile-displayphoto-shrink_400_400/0/1516235415849?e=1729123200&v=beta&t=VXALfEkkWIwxTqml7vzZX1wRh9NyZLg3H2Ln6RCsjjA" width="100px;" alt="David Smith"/><br />
+        <sub><b>David Smith
 </b></sub></a><br />
-            <a href="https://github.com/cole-g-johnson" title="talk">📢</a> 
+            <a href="https://www.linkedin.com/in/dmsmith/" title="linkedin">📢</a> 
     </td>
 </tr></table>
 
