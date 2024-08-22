@@ -51,7 +51,14 @@ By exploring and deploying this sample, you will learn to: Build a retail copilo
 </b></sub></a><br />
             <a href="https://www.linkedin.com/in/dmsmith/" title="linkedin">📢</a> 
     </td>
-</tr></table>
+    <td align="center"><a href="http://learnanalytics.microsoft.com">
+        <img src="https://github.com/nitya.png" width="100px;" alt="Nitya Narasimhan"/><br />
+        <sub><b>Nitya Narasimhan
+</b></sub></a><br />
+            <a href="https://github.com/nitya" title="talk">📢</a> 
+    </td>
+</tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
