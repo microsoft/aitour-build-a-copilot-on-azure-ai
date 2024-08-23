@@ -31,18 +31,17 @@ This training repository is divided in to the following sections:
 
 ## Slides
 
-The [slides](presentations.md) have presenter notes in each part of the session
+The [slides](https://aka.ms/AArxx4b) have presenter notes in each part of the session
 
 ### Timing
 
 | Time        | Description 
 --------------|-------------
-0:00 - 5:00   | Intro to the session 
-5:00 - 15:00  | Why Modern Data Warehousing
-15:00 - 20:00 | Building the Modern data warehouse
-20:00 - 35:00 | Designing a modern data warehouse solution
-35:00 - 40:00 | The evolution of cloud scale analytics
-40:00 - 45:00 | Session review
+0:00 - 3:00   | Welcome & introductions
+3:00 - 8:00  | Objectives & overview
+8:00 - 1:08:00 | Self-paced walkthrough
+1:08:00 - 1:10:00 | Wrap-up & next steps
+
 
 ## Deployment / Preparation
 
@@ -59,5 +58,5 @@ Detailed explanations of each demonstration associated with this presentation ca
 
 | Demo 	                                                                                               | Minutes | Video |
 -------------------------------------------------------------------------------------------------------|---------|----------------- | 
-|  [1 - Exploring a Modern Data Warehouse](demos/README.md#demo-1---exploring-a-modern-data-warehouse) | 15       | [Link](https://globaleventcdn.blob.core.windows.net/assets/data/data10/Data10-Demo-NoAudio.mp4) |
+|  Coming soon | 15       | Coming soon |
 
