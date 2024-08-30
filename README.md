@@ -37,7 +37,7 @@ By exploring and deploying this sample, you will learn to: Build a retail copilo
 
 1. The src folder has been created for all development tasks when creating this session.
 1. The Lab folder is in-person and async participation with content.
-1. The Presenter Notes folder is the train the trainer section. Here you will find slide decks, demo videos, and other content.
+1. The [session-delivery-resources folder](session-delivery-resources) is intended for workshop presenters and proctors. Here you will find slide decks, demo videos, and other content.
 
 ## Content Owners
 
