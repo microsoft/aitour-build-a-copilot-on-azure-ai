@@ -59,9 +59,7 @@ If you are using Skillable for your lab, each participant will have a temporary 
 
 If you are provisioning labs yourself, you will need to provide one Azure subscription per participant. Follow the directions in:
 
-* https://github.com/revodavid/contoso-chat/blob/aitour-fy25/docs/0-Preprovision.md
-
-to deploy. (TODO: replace with https://github.com/Azure-Samples/contoso-chat/blob/aitour-fy25/docs/0-Preprovision.md when merged.)
+* https://github.com/Azure-Samples/contoso-chat/blob/aitour-fy25/docs/0-Preprovision.md
 
 ## Presenter preparation
 
@@ -79,7 +77,7 @@ Presenters act as a proctor during the self-guided phase, and should follow the 
 
 Familiarize yourself with the resources listed at the end of "2-Instructions.md".
 
-Use the [Tech Check Link](TODO) (coming soon) to launch the student lab experience. Run through all the steps in the lab and familiarize yourself with the content.
+Use the **WRK550 Tech Check link** you have been provided with to launch the student lab experience. Run through all the steps in the lab and familiarize yourself with the content.
 
 ## Workshop delivery
 
