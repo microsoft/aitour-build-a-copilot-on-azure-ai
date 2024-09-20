@@ -1,63 +1,92 @@
 # Build a Retail Copilot Code-First on Azure AI
 
-Use Azure AI Studio to build, evaluate, and deploy a customer support chat app. This custom copilot uses a RAG architecture built with Azure AI Search, Azure CosmosDB and Azure OpenAI to return responses grounded in the product and customer data.
+_This repository is a companion to the WRK550 workshop session offered on the 2024-2025 iteration of the Microsoft AI Tour, a worldwide tour of events. [Register to attend an event near you](https://aka.ms/aitour)!_ 
+
+![Build a retail copilot code-first on Azure AI](./img/build-rag-copilot-cover.png)
+
+---
 
 ## Session Description
 
-In this sample we build, evaluate and deploy a customer support chat AI for Contoso Outdoors, a fictitious retailer who sells hiking and camping equipment. The implementation uses a Retrieval Augmented Generation (RAG) architecture to implement a retail copilot solution that responds to customer queries with answers grounded in the company's product catalog and customer purchase history. The sample uses Azure AI Search to create and manage search indexes for product catalog data, Azure Cosmos DB to store and manage customer purchase history data, and Azure OpenAI to deploy and manage the core models required for our RAG-based architecture.
-By exploring and deploying this sample, you will learn to: Build a retail copilot application using the RAG pattern, define and engineer prompts using the Prompty asset, design, run & evaluate a copilot using the Promptflow framework, provision and deploy the solution to Azure using the Azure Developer CLI, understand and apply Responsible AI practices like evaluation and content safety.
+In this workshop, attendees will be introduced to the concept of GenAIOps, and learn to build a custom RAG-based retail copilot code-first on the Azure AI platform, end-to-end.
+
+Using the provided sample, attendees will learn to prototype, evaluate and deploy a customer support chat AI for _Contoso Outdoors_ - a fictitious retailer who sells hiking and camping equipment online. The sample uses a Retrieval Augmented Generation (RAG) architecture to implement a retail copilot solution that responds to customer queries with answers grounded in the retailer's product catalog and customer purchase history. 
+
+## Application Architecture
+
+Attendees will also learn about the components of an Azure AI application architecture for implementing custom copilot solutions, as shown. User queries from a frontend client or UI are received through a hosted endpoint on Azure Container Apps. Queries are routed to various processing services in an orchestrated RAG workflow that ultimately generates the response returned to the user.
+
+![Azure AI App Architecture](./img/contoso-chat-architecture.png)
+
+The Azure AI Search service manages product indexes for the retailer's catalog, returning matching items for user queries based on similarity search and semantic ranking. The Azure CosmosDB service maintains a noSQL database with customer history data, returning product recommendations based on prior purchases. The Azure OpenAI service manages model deployments for embeddings, chat and evaluation - jey capabilities required to implement the query vectortization, response generation, and quality assessment steps of our end-to-end application lifecycle.
 
 ## Learning Outcomes
 
-* Use Azure AI Studio as a code-first platform for building custom copilots​
+Implement a RAG-based copilot end-to-end with Prompty and Azure AI Studio
 
-* Prototype custom copilot on VS Code with powerful tools (Prompty, Promptflow, Codespaces)​
+* Understand the RAG design pattern and Azure AI architecture
+* Provision and manage Azure infrastructure using AI azd templates
+* Ideate and iterate on application prototype using Prompty
+* Evaluate and trace application for quality and observability
+* Deploy copilot on Azure Container Apps for real-world usage
+* Learn how to customize the sample for your own app requirements
 
-* Optimize your custom copilot with manual testing & AI-assisted evaluation (Quality, Safety)​
-
-* Operationalize your custom copilot by deploying to Azure AI Studio (Monitoring, Filters, Logs)​
-
-* Customize the sample to suit your application scenario (data, functions, frameworks, models)
 
 ## Technology Used
 
-* Github Codespaces
-* Azure AI Studio
-* Azure AI Search
-* Cosmos DB
-* OpenAI GPT models
+> [!IMPORTANT]  
+> The table lists all the tools and technologies used in the Contoso Chat sample. It is under active development and features some tools that are in preview - so anticipate regular updates.
+
+| Focus | Technology |
+|:---|:---|
+| Development Environment | GitHub Codespaces, Python 3, Visual Studio Code (IDE)|
+| Chat AI - Backend App | Prompty, FastAPI, Docker container |
+| Chat UI - Frontend App | Next.js, Node.js, npm (in _Contoso Web_) |
+| Azure Infra Provisioning | Azure CLI, Azure Developer CLI, Bicep template |
+| Azure Resources (AI) | Azure AI hub, Azure AI project, Azure Open AI service|
+| Azure Resources (other) | Azure AI Search, Azure CosmosDB, Azure Container Apps |
+| Azure OpenAI Models | gpt-35-turbo, gpt-4, text-embedding-ada002|
+| Observability | Prompty Tracing, Azure App Insights, Open Telemetry|
+| Automation (CI/CD) | GitHub Actions |
+| | |
+
 
 ## Additional Resources and Continued Learning
 
+> [!TIP]
+> If you are a workshop instructor or proctors, start with the [**session delivery resources**](./session-delivery-resources/README.md).
+
+
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| contoso-chat  | https://github.com/Azure-Samples/contoso-chat | Complete sample repository from workshop |
-
-## Repository Guide
-
-1. The src folder has been created for all development tasks when creating this session.
-1. The Lab folder is in-person and async participation with content.
-1. The [session-delivery-resources folder](session-delivery-resources) is intended for workshop presenters and proctors. Here you will find slide decks, demo videos, and other content.
+| **Open-Source Samples** | [Contoso Chat](https://github.com/Azure-Samples/contoso-chat) · [Contoso Web](https://github.com/Azure-Samples/contoso-web) | Open-source repos with chat AI (backend) and web UI (frontend) samples used in the workshop. |
+| **Prompty** |  [Docs](https://prompty.ai/)  · [Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.prompty) · [Package](https://pypi.org/project/prompty/) | New asset class that brings flexibility, observability, portability and understandability to the prompt engineering and ideation phase of app development. _Currently in preview_. |
+| **Azure AI Templates** | [Curated Collection](https://aka.ms/azd-ai-templates) | Curated collection of Azure AI _azd templates_ that provide open-source samples for signature application scenarios using Azure AI and popular frameworks. Deployable with a single command!|
+| **Azure AI Studio** | [Docs](https://learn.microsoft.com/en-us/azure/ai-studio/) · [SDK](https://learn.microsoft.com/azure/ai-studio/how-to/develop/sdk-overview) · [Model Catalog](https://ai.azure.com/explore/models) | Unified platform for building end-to-end generative AI applications on Azure. Explore the model catalog, deploy and manage models and applications, adopt responsible AI practices. |
+| **Generative AI For Beginners** | [Open-Source Curriculum](https://aka.ms/genai-beginners) | Beginner-friendly open-source collection of lessons with hands-on projects to build up your knowledge of core concepts in prompt engineering, fine tuning, and more.|
+| | | |
 
 ## Content Owners
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <table>
-<tr>
-    <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://media.licdn.com/dms/image/C4D03AQGMiGWZFIRUKw/profile-displayphoto-shrink_400_400/0/1516235415849?e=1729123200&v=beta&t=VXALfEkkWIwxTqml7vzZX1wRh9NyZLg3H2Ln6RCsjjA" width="100px;" alt="David Smith"/><br />
-        <sub><b>David Smith
-</b></sub></a><br />
+    <tr>
+        <td align="center">
+            <a href="http://learnanalytics.microsoft.com">
+                <img src="https://github.com/revodavid.png" width="100px;" alt="David Smith"/><br />
+                <sub><b>David Smith</b></sub>
+            </a><br />
             <a href="https://www.linkedin.com/in/dmsmith/" title="linkedin">📢</a> 
-    </td>
-    <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://github.com/nitya.png" width="100px;" alt="Nitya Narasimhan"/><br />
-        <sub><b>Nitya Narasimhan
-</b></sub></a><br />
-            <a href="https://github.com/nitya" title="talk">📢</a> 
-    </td>
-</tr>
+        </td>
+        <td align="center">
+            <a href="http://learnanalytics.microsoft.com">
+                <img src="https://github.com/nitya.png" width="100px;" alt="Nitya Narasimhan"/><br />
+                <sub><b>Nitya Narasimhan, PhD</b></sub>
+            </a><br />
+            <a href="https://linkedin.com/in/nityan" title="talk">📢</a> 
+        </td>
+    </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
