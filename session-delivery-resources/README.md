@@ -1,24 +1,29 @@
-## Session Delivery Resources
+## How To Use This
 
 Welcome,
 
-The following resources are intended for a presenter to learn and deliver the session.
+We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the workshop content creation team.
 
-We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the slides created by the presentation design team. 
+Along with the video of the presentation, this document will link to all the assets you need to successfully present including PowerPoint slides, demo instructions & code.
 
-Along with the video of the presentation, this document will link to all the assets you need to successfully present including PowerPoint slides and demo instructions & code.
+1. Read document in its entirety.
+2. Watch the video presentation.
+3. Ask questions of the Lead Presenter.
 
-1.  Read document in its entirety.
-2.  Watch the video presentation
-3.  If you have questions, use the Discussions tab of this repository.
 
 ## File Summary
 
-| Resources         | Links                            | Description |
-|-------------------|----------------------------------|-------------------|
-| PowerPoint        | [Presentation](https://aka.ms/AArxx4b) | Presenter slides |
-| PPT Recording     | Coming soon | Video Recording of the PowerPoint slides with no audio |
-| Workshop Recording | Coming soon | Video Recording of participant experience working through the workshop instructions
+| Resources | Links | Description |
+|:---|:---|:---|
+| Presentation Slides   | [PPT](https://aka.ms/AArxx4b) | Powerpoint deck for speaker intro |
+| Presentation Video    | Video | Recorded walkthrough of speaker deck   |
+| Presentation Guidance | Video | Deck walkthrough with speaker tips |
+| Contoso Outdoors Demo | Video | Application Scenario walkthrough |
+| Workshop Walkthrough  | Video | Step-by-Step Walkthrough of workshop |
+| | | |
+
+
+The following resources are intended for a presenter to learn and deliver the session.
 
 
 ## Overview
@@ -33,15 +38,18 @@ This document is divided in to the following sections:
 
 ### Workshop Format
 
-This is a 75-minute workshop. Participants will begin with an Azure subscription with resources deployed as described below.
+This is a 75-minute workshop. Participants will receive a link to the Skillable Lab that has an Azure subscription with _pre-provisioned resources_ as described below. 
 
 | Start Time        | Description 
 --------------|-------------
-00:00 | Workshop begins, introductions
+00:00 | Workshop session begins - introduce speaker, proctors
 02:00 | Presenter delivers intro slides
-15:00 | Participants begin following self-paced walkthrough
+10:00 | Participants begin following self-paced walkthrough
 70:00 | Presenter delivers wrap-up slides
 75:00 | Workshop ends
+
+> [!TIP]
+> Attendees will need to fork a sample repo and launch GitHub Codespaces to get started. _The codespaces setup can take a few minutes. Consider having attendees complete this step of the workshop before speaker delivers intro slides. This way, their Codespaces session is ready when speaker finishes, and they can dive in_.
 
 Role | How many | What they do
 -----|----------|--------------
@@ -51,35 +59,32 @@ Proctors |2 | With Presenter, assists participants during the self-guided phase
 
 ## Pre-Deployment 
 
->**What's Here?** Deploying the workshop environment on Azure - including the prerequisites.
+This workshop requires a number of Azure and AI resources to be pre-deployed before we can begin development. The [Contoso Chat application architecture](https://github.com/Azure-Samples/contoso-chat) gives us a sense of the resources involved. 
 
 ### Skillable-based labs
 
-If you are using Skillable for your lab, each participant will have a temporary Azure subscription to use with all of the necessary resources pre-deployed.
+If you are using Skillable for your lab, each participant will have a temporary Azure subscription to use with all of the necessary resources pre-deployed. 
 
 ### Self-provisioned labs
 
-If you are provisioning labs yourself, you will need to provide one Azure subscription per participant. Follow the directions in:
+If you are provisioning labs yourself, you will need to provide one Azure subscription per participant. Follow the directions in [this self-provision guide](https://github.com/Azure-Samples/contoso-chat/blob/main/docs/workshop/in-person-starts/00-self-preprovision.md)
 
-* https://github.com/Azure-Samples/contoso-chat/blob/aitour-fy25/docs/0-Preprovision.md
 
 ## Presenter preparation
 
-The [slides](https://aka.ms/AArxx4b) have presenter notes in each part of the session.
+1. The [slides](https://aka.ms/AArxx4b) have presenter notes in each part of the session.
+1. You will be provided a Lab Link to share with the participants. _This is the link that will each student will use to access the lab environment._
+1. Download the slides to your laptop for presenting. _The slides have an embedded demo video you can save separately if needed_.
+1. Edit Slide 5 to include the Lab Link **in a large font**. Leave this slide visible as participants walk in.
+1. Edit Slide 6 to provide the photo, name, and LinkedIn profile of the presenter and (optionally) proctors.
 
-You will be provided a Lab Link to share with the participants. This is the link that will each student will use to access the lab environment.
-
-* Download the slides to your laptop for presenting.
-* Edit Slide 2 to include the Lab Link in a large font. Leave this slide visible as participants walk in.
-* Edit Slide 5 to provide the photo, name, and LinkedIn profile of the presenter and (optionally) proctors.
-
-Presenters act as a proctor during the self-guided phase, and should follow the proctor preparation steps below as well.
+Presenters act as additional proctors during the self-guided phase, and should follow the proctor preparation steps below as well.
 
 ## Proctor preparation
 
-Familiarize yourself with the resources listed at the end of "2-Instructions.md".
-
-Use the **WRK550 Tech Check link** you have been provided with to launch the student lab experience. Run through all the steps in the lab and familiarize yourself with the content.
+1. Familiarize yourself with the resources listed at the end of "2-Instructions.md".
+1. Use the **WRK550 Tech Check link** you have been provided with to launch the student lab experience. Run through all the steps in the lab and familiarize yourself with the content.
+1. Review the **WRK550** Walkthrough video shared with you to get a sense of the pacing and tips for troubleshooting key areas.
 
 ## Workshop delivery
 
