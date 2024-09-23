@@ -1,8 +1,5 @@
 # Session folder
 
-> [!NOTE]  
->  The Microsoft AI Tour is Live - [Register to attend](https://aka.ms/aitour) at a city near you!
-
 This folder contains the public facing files for the lab `WRK550`.
 
 ## Build a Retail Copilot Code-First on Azure AI
@@ -12,6 +9,8 @@ These instructions are for participants of the Workshop "Build a Retail Copilot 
 > In this workshop, attendees will be introduced to the concept of GenAIOps, and learn to build a custom RAG-based retail copilot end-to-end, _code-first_ on the Azure AI platform.
 >
 > Using the provided sample, attendees will learn to prototype, evaluate and deploy a customer support chat AI for _Contoso Outdoors_ - a fictitious retailer who sells hiking and camping equipment online. The sample uses a Retrieval Augmented Generation (RAG) architecture to implement a retail copilot solution that responds to customer queries with answers grounded in the retailer's product catalog and customer purchase history. 
+
+🌟 | The Microsoft AI Tour is Live and coming to a city near you!
 
 - [**Register to attend**](https://aitour.microsoft.com/) at a tour stop near you.
 - [**View Lab resources**](https://aka.ms/aitour/wrk550) to continue your journey.
@@ -51,19 +50,19 @@ To get started, you will need to:
 
 ## View Instructions
 
-The workshop instructions are available in the repository under the [`docs/workshop`](https://github.com/Azure-Samples/contoso-chat/tree/main/docs/workshop/docs) folder as readable Markdown files. The content is authored in Markdown and is readable directly from source.
-
-However, for convenience, you can use one of these two options to get a _rendered preview_ as shown below, which may be easier to navigate.
+The workshop instructions are available in the repository under the [`docs/workshop`](https://github.com/Azure-Samples/contoso-chat/tree/main/docs/workshop/docs) folder as readable Markdown files. The content is authored in Markdown and is readable directly from source. However, for convenience, you can use one of these two options to get a _rendered preview_ as shown below, which may be easier to navigate.
 
 ![Workshop](./../img/contoso-chat-workshop.png)
 
 ### **Option 1: View Online Preview**
 
-Visit [https://aka.ms/aitour/contoso-chat/workshop](https://aka.ms/aitour/contoso-chat/workshop) in your browser, to see a hosted preview of this workshop guide. _We will keep this up to date for the duration of Microsoft AI Tour_.
+Visit [https://aka.ms/aitour/contoso-chat/workshop](https://aka.ms/aitour/contoso-chat/workshop) in your browser:
+- get an interactive hosted preview of this workshop guide you can explore now.
+- bookmark and revisit it (_we will keep it updated for the duration of the tour_)
 
 ### **Option 2: View Local Preview**
 
-Once GitHub Codespaces is running on your fork of the repo, you can launch the preview locally using these 2 steps:
+Launch GitHub Codespaces on your fork of the repo, then get the local preview by:
  - changing to the workshop directory in a terminal: `cd docs/workshop`
  - running the preview server: `mkdocs serve -a localhost:5000`
 
@@ -77,14 +76,15 @@ You can now continue working through the instructions for the workshop, starting
 
 ![Developer Workflow](./../img/workshop-developer-flow.png)
 
+> [!TIP]  
+> If you enjoyed this workshop, please [give the repository a ⭐](https://aka.ms/aitour/contoso-chat), watch it for updates, and share it with others so we can help make this better for everyone!
+
 <br/>
 
 ## Discussions
 
 Contoso Chat is an open source project supported by Microsoft. See the [SUPPORT.md](../SUPPORT.md) file for details on how to raise issues or contribute. 
 
-> [!TIP]  
-> If you enjoyed this workshop, please [give the repository a ⭐](https://aka.ms/aitour/contoso-chat), watch it for updates, and share it with others so we can help make this better for everyone!
 
 ## Additional Resources and Continued Learning
 
