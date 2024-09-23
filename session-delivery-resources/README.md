@@ -18,8 +18,8 @@ Along with the video of the presentation, this document will link to all the ass
 | Presentation Slides   | [PPT](https://aka.ms/AArxx4b) | Powerpoint deck for speaker intro |
 | Presentation Video    | [Video](https://aka.ms/AAse6pr)| Recorded walkthrough of speaker deck   |
 | Presentation Guidance | [Video](https://aka.ms/AAseehk) | Deck walkthrough with speaker tips |
-| Contoso Outdoors Demo | Video | Application Scenario walkthrough |
-| Workshop Walkthrough  | Video | Step-by-Step Walkthrough of workshop |
+| Contoso Outdoors Demo | [Video](https://aka.ms/AAsdlon) | Application Scenario walkthrough |
+| Workshop Walkthrough  | [Video](https://aka.ms/AAse7mb) | Step-by-Step Walkthrough of workshop |
 | | | |
 
 
