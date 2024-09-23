@@ -88,4 +88,4 @@ Presenters act as additional proctors during the self-guided phase, and should f
 
 ## Workshop delivery
 
-The workshop will be delivered by the Presenter.
+The workshop will be delivered by the Presenter. Check out the [lab manual](./LAB_MANUAL.md) for the overview.
