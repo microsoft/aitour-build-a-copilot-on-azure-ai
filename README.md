@@ -8,28 +8,28 @@ _This repository is a companion to the WRK550 workshop session offered on the 20
 
 ## Session Description
 
-In this workshop, attendees will be introduced to the concept of GenAIOps, and learn to build a custom RAG-based retail copilot code-first on the Azure AI platform, end-to-end.
+In this workshop, attendees will be introduced to the concept of GenAIOps, and learn to build a custom RAG-based retail copilot end-to-end, _code-first_ on the Azure AI platform.
 
 Using the provided sample, attendees will learn to prototype, evaluate and deploy a customer support chat AI for _Contoso Outdoors_ - a fictitious retailer who sells hiking and camping equipment online. The sample uses a Retrieval Augmented Generation (RAG) architecture to implement a retail copilot solution that responds to customer queries with answers grounded in the retailer's product catalog and customer purchase history. 
 
 ## Application Architecture
 
-Attendees will also learn about the components of an Azure AI application architecture for implementing custom copilot solutions, as shown. User queries from a frontend client or UI are received through a hosted endpoint on Azure Container Apps. Queries are routed to various processing services in an orchestrated RAG workflow that ultimately generates the response returned to the user.
+Attendees will also learn the components of an Azure AI application architecture for implementing a custom copilot solution. User input ("question") to a frontend chat UI or client is sent to a hosted copilot endpoint on Azure Container Apps. The query is then routed to various processing services in an orchestrated RAG workflow that generates the relevant response - which is returned to the user through the frontend client.
 
 ![Azure AI App Architecture](./img/contoso-chat-architecture.png)
 
-The Azure AI Search service manages product indexes for the retailer's catalog, returning matching items for user queries based on similarity search and semantic ranking. The Azure CosmosDB service maintains a noSQL database with customer history data, returning product recommendations based on prior purchases. The Azure OpenAI service manages model deployments for embeddings, chat and evaluation - jey capabilities required to implement the query vectortization, response generation, and quality assessment steps of our end-to-end application lifecycle.
+The orchestration involves three processing services. The _Azure AI Search service_ manages product indexes for the retailer's catalog, returning matching items for user queries based on similarity search and semantic ranking. The _Azure CosmosDB service_ maintains a noSQL database with customer order history, returning product recommendations based on prior purchases. The _Azure OpenAI service_ manages model deployments for embeddings, chat and evaluation - key capabilities required to implement the query vectortization, response generation, and quality assessment steps of our end-to-end application lifecycle.
 
 ## Learning Outcomes
 
 Implement a RAG-based copilot end-to-end with Prompty and Azure AI Studio
 
-* Understand the RAG design pattern and Azure AI architecture
-* Provision and manage Azure infrastructure using AI azd templates
-* Ideate and iterate on application prototype using Prompty
-* Evaluate and trace application for quality and observability
-* Deploy copilot on Azure Container Apps for real-world usage
-* Learn how to customize the sample for your own app requirements
+* Understand the RAG design pattern and Azure AI app architecture
+* Provision and manage Azure infrastructure using _azd_-enabled AI templates
+* Ideate and iterate on the application prototype using Prompty assets and tooling
+* Evaluate and trace application execution for observability in cost and performance
+* Deploy the custom copilot to Azure Container Apps for real-world usage
+* Customize the sample with your data and extend it to meet your app scenariosx
 
 
 ## Technology Used
