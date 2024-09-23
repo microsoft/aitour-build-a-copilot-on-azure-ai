@@ -1,15 +1,13 @@
 # Session folder
 
+> [!NOTE]  
+>  The Microsoft AI Tour is Live - [Register to attend](https://aka.ms/aitour) at a city near you!
+
 This folder contains the public facing files for the lab `WRK550`.
 
 ## Build a Retail Copilot Code-First on Azure AI
 
-These instructions are for participants of the Workshop "Build a Retail Copilot Code-First on Azure AI" at Microsoft AI Tour 2024-2025.
-
-> [!NOTE]  
->  The Microsoft AI Tour is Live - [Register to attend](https://aka.ms/aitour) at a city near you!
-
-The workshop is offered as an **instructor-led** session (WRK550) on the **Prototype to Production** track:
+These instructions are for participants of the Workshop "Build a Retail Copilot Code-First on Azure AI" at Microsoft AI Tour 2024-2025. The workshop is offered as an **instructor-led** session (WRK550) on the **Prototype to Production** track:
 
 > In this workshop, attendees will be introduced to the concept of GenAIOps, and learn to build a custom RAG-based retail copilot end-to-end, _code-first_ on the Azure AI platform.
 >
@@ -18,41 +16,29 @@ The workshop is offered as an **instructor-led** session (WRK550) on the **Proto
 - [**Register to attend**](https://aitour.microsoft.com/) at a tour stop near you.
 - [**View Lab resources**](https://aka.ms/aitour/wrk550) to continue your journey.
 
-If you're not a workshop participant at AI Tour, visit [https://github.com/Azure-Samples/contoso-chat](https://github.com/Azure-Samples/contoso-chat) and fork the sample to explore this on your own.
- - You can find the workshop instructions in the [`docs/workshop`](https://github.com/Azure-Samples/contoso-chat/tree/main/docs/workshop) folder
- - You can view a web preview of this at [https://aka.ms/aitour/contoso-chat/workshop/](https://aka.ms/aitour/contoso-chat/workshop)
+If you're not a workshop participant at AI Tour, you can still visit [Azure-Samples/contoso-chat](https://github.com/Azure-Samples/contoso-chat) to explore the workshop **using your own Azure subscription**.
+ - View the workshop instructions in the [`docs/workshop`](https://github.com/Azure-Samples/contoso-chat/tree/main/docs/workshop) folder
+ - View a web preview of instructions at [https://aka.ms/aitour/contoso-chat/workshop/](https://aka.ms/aitour/contoso-chat/workshop)
 
-The instructions contain guidance for a _self-paced_ version of this workshop that you can run **using your own Azure subscription**.
+
 
 ## Pre-Requisites
 
-https://github.com/Azure-Samples/contoso-chat/blob/main/docs/workshop/docs/00-Before-You-Begin/index.md
+To participate in the instructor-led workshop you will need the following:
 
+1. **Your own laptop.** - It need only be capable of running a browser and GitHub Codespaces. We recommend using a recent version of the Edge, Chrome or Safari browser.
+1. **A GitHub Account.** - You can [sign up for a free account](https://github.com/signup) if needed. Once you complete the workshop, you will have a personal fork of the sample (with workshop instructions) to continue exploring at home.
+1. _recommended_: **Familiarity with Visual Studio Code.** - We will run all code in GitHub Codespaces and use VS Code Online as our primary development environment in it.
+1. _preferred_: **Familiarity with the `bash` shell.** - We'll use it in the VS Code terminal for command-line execution of tasks and scripts, including for Azure CLI commands.
+1. _preferred_: **Familiarity with Python and Jupyter Notebooks** - We'll be creating Python scripts and running them from the command line and from Notebooks.
 
-> [!NOTE]  
->  To participate in the instructor-led workshop you will need the following:
-
-1. **Your own laptop.**
-    * It need only be capable of running a browser and GitHub Codespaces, so almost any laptop will do.
-        * A recent version of the Edge, Chrome or Safari browser is recommended.
-1. **A GitHub Account.**
-    * If you don't have one, you can [sign up for a free account](https://github.com/signup) now.
-    * After this workshop is complete, you will have a fork of the "contoso-chat" repository in your GitHub account, which includes all the materials you will need to reproduce this workshop at home.
-1. (recommended) **Familiarity with Visual Studio Code.** 
-    * We will run all code in GitHub Codespaces, a virtualized Linux machine, instead of your local laptop. We won't be running anything on your laptop directly.
-    * VS Code Online will be our development environment in GitHub Codespaces.
-    * If you are familiar with running Codespaces within VS Code Desktop on your laptop, feel free to do so. 
-1. (preferred) **Familiarity with the `bash` shell.**
-    * We'll be using `bash` to run commands in the VS Code terminal, including Azure CLI commands.
-1. (preferred) **Familiarity with Python and Jupyter Notebooks**
-    * We'll be creating Python scripts and running them from the command line and from Notebooks.
-
-> [!NOTE]  
->  To complete the workshop on your own at home you have two more requirements:
+> [!IMPORTANT]  
+>  If you are working on this at home, using the **Self-Guided** option, you also need:
 
 1. **Active Azure Subscription** - with access to the relevant resources and AI model deployments required for this workshop.
-1. **Additional Provisioning Step ** - you will need to provision the infrastructure yourself with the provided guidance (run `azd up`).
+1. **Manual Provisioning Step** - you will need to provision the infrastructure yourself by manually running required commands (`azd up`).
 
+<br/>
 
 ## Get Started
 
@@ -83,6 +69,7 @@ Once GitHub Codespaces is running on your fork of the repo, you can launch the p
 
 You will see a dialog pop-up with options to view this in browser or in VS Code.
 
+<br/>
 
 ## Continue The Workshop
 
@@ -90,6 +77,7 @@ You can now continue working through the instructions for the workshop, starting
 
 ![Developer Workflow](./../img/workshop-developer-flow.png)
 
+<br/>
 
 ## Discussions
 
