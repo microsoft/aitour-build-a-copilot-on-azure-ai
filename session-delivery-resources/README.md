@@ -104,7 +104,7 @@ the lab content and the source of individualized Azure credentials.
 Depending on your role in the workshop, you will launch the Skillable lab environment using a dedicated link.
 
 * **[Lab authors](https://labondemand.com/LabProfile/170937)**: This link is used by authors and maintainers of the lab content.
-  You must log in using your Microsoft corporate credentils to access this link.
+  You must log in using your Microsoft corporate credentials to access this link.
   **Note**: the lab environment will appear in 2-3 minutes,
   but you must wait up to 30 minutes more for Azure resources to deploy to the temporary Azure account
   before running the workshop.
