@@ -1,6 +1,6 @@
 ## How To Use This
 
-Welcome,
+Welcome!
 
 We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the workshop content creation team.
 
@@ -69,7 +69,6 @@ If you are using Skillable for your lab, each participant will have a temporary 
 
 If you are provisioning labs yourself, you will need to provide one Azure subscription per participant. Follow the directions in [this self-provision guide](https://github.com/Azure-Samples/contoso-chat/blob/main/docs/workshop/in-person-starts/00-self-preprovision.md)
 
-
 ## Presenter preparation
 
 1. The [slides](https://aka.ms/AArxx4b) have presenter notes in each part of the session.
@@ -88,4 +87,31 @@ Presenters act as additional proctors during the self-guided phase, and should f
 
 ## Workshop delivery
 
-The workshop will be delivered by the Presenter. Check out the [lab manual](./LAB_MANUAL.md) for the overview.
+This lab is intended to be delivered by a Presenter who will show the slides and demos and answer questions for the class, supported by one or more Proctors who provide individual assistance during
+the lab. 
+
+The workshop will be delivered by the Presenter. Check out the  for the overview.
+
+by one or more Proctors who will provide individual assistant to participants during the lab.
+
+### Launching the lab environment
+
+When this lab is delivered during AI Tour, the [Skillable](https://docs.skillable.com/) platform provides a temporary Azure
+account for each participant to use. After logging in, the environment provides a 
+[Lab Manual](./LAB_MANUAL.md), the launching point for
+the lab content and the source of individualized Azure credentials.
+
+Depending on your role in the workshop, you will launch the Skillable lab environment using a dedicated link.
+
+* **[Lab authors](https://labondemand.com/LabProfile/170937)**: This link is used by authors and maintainers of the lab content.
+  You must log in using your Microsoft corporate credentils to access this link.
+  **Note**: the lab environment will appear in 2-3 minutes,
+  but you must wait up to 30 minutes more for Azure resources to deploy to the temporary Azure account
+  before running the workshop.
+  Log into the [Azure portal](https://portal.azure.com) using the credentials in the Lab Manual to monitor progress.  
+* **Presenters and Proctors**: Launch Lab WRK550 from the Tech Check portal. (This link will be provided by your content owner 1-2
+  weeks before lab events.) Use this link to test the lab using an environment identical to that provded to lab participants.
+* **Partcipants**. Use the participant link provided by your lab presenter. Note: participant lab environments will only be
+  active 15 minutes before through 30 minutes after the scheduled lab time.
+
+
