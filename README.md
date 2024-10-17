@@ -1,4 +1,6 @@
 # Build a Retail Copilot Code-First on Azure AI
+[![Azure AI Community Discord](
+https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4?WT.mc_id=aiml-00001-leestott)
 
 _This repository is a companion to the WRK550 workshop session offered on the 2024-2025 iteration of the Microsoft AI Tour, a worldwide tour of events. [Register to attend an event near you](https://aka.ms/aitour)!_ 
 
