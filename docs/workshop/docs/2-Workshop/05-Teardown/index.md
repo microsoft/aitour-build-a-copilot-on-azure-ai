@@ -30,17 +30,6 @@ Check that the right tab is selected for your session, and complete the steps!
 
         Visit the Skillable Lab page and click `End Session` to end the session and release all resources. This allows the lab to be run again without quota issues for others.
 
-    
-=== "Microsoft Ignite"
-
-    !!! success "Reminder 1: Please Give us Feedback"
-
-        Visit [aka.ms/MicrosoftIgniteEvals](https://aka.ms/MicrosoftIgniteEvals) to give us feedback on this session (LAB401)
-      
-    !!! warning "Reminder 2: End the Skillable Session"
-
-        Visit the Skillable Lab page and click `End Session` to end the session and release all resources. This allows the lab to be run again without quota issues for others.
-
 ---
 
 ## 3. Stop your Codespaces

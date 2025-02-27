@@ -1,5 +1,5 @@
 
-# 4.5. (Optional) Homework
+# 6.3. Explore Evaluation
 
 !!! example "KEEP LEARNING AT HOME: We covered a lot in this section!! But there's a lot more left to learn. Here are two areas for you to explore on your own, when you revisit this workshop with your personal copy of the repo."
 
