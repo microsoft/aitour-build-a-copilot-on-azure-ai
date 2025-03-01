@@ -1,12 +1,12 @@
 # 6.1 Validate Setup
 
 
-**THIS SECTION IS OPTIONAL!**. It is meant to help you understand your infrastructure setup and troubleshoot any issues that occur in setup. [**Move directly to IDEATE if time is limited**](./../../02-Ideate/01.md).
+**THIS SECTION IS OPTIONAL!**. It is meant to help you understand your infrastructure setup and troubleshoot any issues that occur in setup. [**Move directly to IDEATE if time is limited**](./../02-Ideate/01.md).
 
 
 !!! quote "LET'S REVIEW: We have completed the Provision & Setup stages"
 
-    ![Dev Workflow](./../../../img/workshop-developer-flow.png)
+    ![Dev Workflow](./../../img/workshop-developer-flow.png)
 
     At this time, we should have done the following:
 
@@ -23,7 +23,7 @@
 
 Here's a reminder of the Azure Application Architecture - let's check our provisioned Resource Group to make sure these resources were created.
 
-![ACA Architecture](./../../../img/aca-architecture.png)
+![ACA Architecture](./../../img/aca-architecture.png)
 
 1. Open a new browser tab and navigate to the link below. You may be prompted to login.
     ``` title=""

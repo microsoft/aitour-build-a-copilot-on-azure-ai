@@ -13,7 +13,7 @@ Let's learn how this design pattern works in the context of our Contoso Chat app
 
     !!! info "The user query arrives at our copilot implementation via the endpoint (API)"
 
-    Our deployed Contoso Chat application is exposed as a hosted API endpoint using Azure Container Apps. The inoming "user query" has 3 components: the user _question_ (text input), the user's _customer ID_ (text input), and an optional _chat history_ (object array).
+    Our deployed Contoso Chat application is exposed as a hosted API endpoint using Azure Container Apps. The incoming "user query" has 3 components: the user _question_ (text input), the user's _customer ID_ (text input), and an optional _chat history_ (object array).
 
     The API server extracts these parameters from the incoming request, and invokes the Contoso Chat application - starting the workflow reflecting this RAG design pattern.
 
