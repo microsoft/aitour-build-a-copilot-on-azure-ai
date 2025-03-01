@@ -45,7 +45,7 @@ This workshop is offered in both self-guided and instructor-led formats. Pick th
         On completing this workshop, you will have:
         
         1. A personal copy of the [Contoso Chat](https://aka.ms/aitour/contoso-chat) repository in your GitHub profile. This contains all the materials you need to reproduce the workshop on your own later (e.g., as a _Self-Guided_ session).
-        1. Hands-on understanding of the [Azure AI Studio](https://ai.azure.com) platform and relevant developer tools (e.g., Azure Developer CLI, Prompty, Fast API) to streamline end-to-end development workflows for your own AI apps.
+        1. Hands-on understanding of the [Azure AI Foundry](https://ai.azure.com) platform and relevant developer tools (e.g., Azure Developer CLI, Prompty, Fast API) to streamline end-to-end development workflows for your own AI apps.
 
 
 === "Microsoft AI Tour"

@@ -1,4 +1,4 @@
-# 2.3 Validate Your Setup
+# 6.1 Validate Setup
 
 
 **THIS SECTION IS OPTIONAL!**. It is meant to help you understand your infrastructure setup and troubleshoot any issues that occur in setup. [**Move directly to IDEATE if time is limited**](./../../02-Ideate/01.md).
@@ -44,7 +44,7 @@ Here's a reminder of the Azure Application Architecture - let's check our provis
 
 ### 3.2 Visit Azure AI Foundry
 
-!!! tip "The Azure AI Studio portal lets us view and manage the Azure AI project for our app."
+!!! tip "The Azure AI Foundry portal lets us view and manage the Azure AI project for our app."
 
 1. Open a new browser tab and [navigate to this page](https://ai.azure.com?feature.customportal=false#home):
     ``` title=""

@@ -1,4 +1,4 @@
-# 3.6 (Optional) Explanation
+# 6.2 Understand Ideation
 
 
 !!! success "CONGRATULATIONS. You just learned prompt engineering with Prompty!"
@@ -209,11 +209,3 @@ Let's unpack what happens:
 And that's it. Later on, we'll see how we can test the FastAPI endpoint locally (using `fastapi dev src/api/main.py`) or by visiting the hosted version on Azure Container Apps. This takes advantage of the [default Swagger UI](https://fastapi.tiangolo.com/reference/openapi/docs/?h=%2Fdocs) on the `/docs` endpoint which provides an interactive interface for _trying out_ various routes on the app.
 
 ---
-
-!!! task "Cleanup your sandbox!"
-
-    _In this section, you saw how Prompty tooling supports rapid prototyping - starting with a basic prompty. Continue iterating on your own to get closer to the `contoso_chat/chat.prompty` target. You can now delete the `sandbox/` folder, to keep original app source in focus_.
-
-
-
-
