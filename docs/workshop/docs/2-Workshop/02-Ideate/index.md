@@ -1,6 +1,6 @@
 # 3. Ideate With Prompty
 
-!!! warning "THIS SECTION IS FOR INFORMATION ONLY → If time is limited, skip to the next section for the lab."
+!!! warning "THIS SECTION IS FOR INFORMATION ONLY → Skip to the next section to get started on exercises."
 
 The infrastructure is provisioned. The development environment is setup. It's time to ideate.
 

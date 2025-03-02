@@ -1,74 +1,85 @@
 # 2.2 Skillable-Based Setup
+**Welcome to the instructor-led workshop track on the Microsoft AI Tour!** This setup page is meant for attendees currently in the venue, working with a Skillable subscription.
 
-This is the start of the instructor-led workshop track for Microsoft AI Tour attendees.
+!!! quote "ARE YOU REVISITING THE LAB AT HOME AFTER AITOUR? → [JUMP TO SELF-GUIDED SETUP PAGE](./../2-Provisioning/01-Self-Guided.md) instead"  
 
-!!! quote "ARE YOU REVISITING THE LAB AT HOME AFTER AITOUR? → [JUMP TO SELF-GUIDED SETUP](./../2-Provisioning/01-Self-Guided.md) instead"  
+!!! info "IN-VENUE ATTENDEES: Before You Begin .."
+
+    - Check that you have the Skillable Lab link. The instructor will have displayed it onscreen.
+    - The instructor may ask you to wait till they give the signal to launch. Follow their lead.
+    - Look around and note the proctors in the room. Raise your hand to get their help at any time.
 
 ---
 
 ## 1. Launch Skillable VM
 
-Your instructor will have provided you the Skillable Lab link at the beginning of the session.  If you have not already done so, launch that Skillable lab now and wait till it completes loading. You should see something like this when ready.
+Visit the Skillable Lab link provided to you by the instructor. You will see a page with the **WRK550** lab code and a Launch button. Click to launch the lab. _This takes a couple of minutes to load_.
 
-!!! info "YOU WILL SEE A SKILLABLE VM LIKE THIS WHEN LOADING COMPLETES"
+You should see a screen similar to that in the screenshot below. 
+
+!!! quote "THIS IS THE SKILLABLE LAB VM: It has a login screen (left) and instructions (right)."
+
+    - [X] The page has a countdown timer (yellow highlight) - _use it to track time left in session_.
+    - [X] The panel has a Lab Instructions section - _open the link provided in a new browser tab_.
+    - [X] There's an Azure Credentials section (green highlight) - *verify that values are not empty*.
+    - [X] There are Skillable VM credentials (red highlight) - *we won't need them* so don't log in here.
+
+    !!! warning "DO NOT LOG INTO THE VM - we will be working in GitHub Codespaces instead."
 
     ![Skillable](./../../../img/Skillable-WRK550.png)
 
-This is the Skillable environment which consists of a VM and an active Azure subscription that has been pre-provisioned with everything you need for this lab.
+!!! info "IMPORTANT: Leave this tab open in your browser. Closing it will automatically terminate your lab session"
 
-!!! warning "DO NOT LOG INTO THE VM - we will be working in GitHub Codespaces instead."
 
-**Leave this Skillable tab open** - closing it will prematurely will terminate your lab session. Instead, take a minute to view the page and make note of the following information:
-
-!!! quote ""
-
-    - [X] There's a countdown timer (yellow highlight) - use it to track time left in session.
-    - [X] There's a Lab Instructions link - click to open _this_ instruction guide in a new browser tab.
-    - [X] There's an Azure Credentials section (green highlight) - verify that values are not empty.
-    - [X] There are Skillable VM credentials (red highlight) - **ignore them** since we don't use the VM.
-
+**Congratulations!** Your Skillable VM is live!
 
 ---
 
-## 3. Launch GitHub Codespaces
+## 2. Launch GitHub Codespaces
 
-The repository is configured with a _devcontainer_ that lets you get a predefined development environment with just a couple of clicks, using GitHub Codespaces. By using a **prebuild** image, we can speed up the launch time - so let's do that, next!
+The repository is configured with a _devcontainer_ (defining the development environment) and GitHub Codespaces _prebuild_ that will launch almost instantly, with one click. Let's activate it.
 
-!!! info "**TIP**: Hover over the folder icon in code blocks to copy-paste"
 
-    Codeblocks (or code fences) are blocks containing terminal commands or code snippets, used for illustration. These blocks will have a faint _folder_ icon at top right. Hover over it to get a "Copy to clipboard" option for efficient copy-paste tasks.
+### 2.1 Activate The Prebuild
 
-### 3.1 Activate The Prebuild
-
-1. Open a new browser tab and navigate to the link below. If you were not already logged into GitHub, you will be prompted to do so now. **Use a personal GitHub account** to log in.
+1. Open a new browser tab and navigate to the link below. 
 
     ``` title="" linenums="0"
     https://aka.ms/contoso-chat/prebuild
     ```
 
-1. You should see a screen like this. Your _Region_ selection may vary based on the current location. Click the **Create codespace** button to continue.
+    !!! info "**TIP**: Hover the mouse over the folder icon in the code block (right) to get a _Copy to clipboard_ option."
+
+1. You may be prompted to log into GitHub first. **Use a personal GitHub account here**.
+1. You will see a screen like this with values auto-selected for you. Click **Create codespace**.
 
     ![Login](./../../../img/prebuild-screen.png)
 
-1. You will see a new browser tab open with a Visual Studio Code editor loading.
-    - Wait for the page to complete loading (takes a few minutes)
-    - You will see a VS Code terminal and a README file open in the editor.
+1. You will see a new browser tab open with a VS Code editor load in less than a minute.
+1. Wait till ready. You see a README.md window (editor pane) and an active cursor (terminal).
     
-    !!! warning "**CLOSE THE README view.** We will not be using those instructions today."
+    !!! warning "**CLOSE THE README WINDOW inside the editor pane.** We won't need that today."
 
-### 3.2 Fork The Repo
+**Congratulations!** Your development environment is active!
 
-The prebuilt Codespaces is running on the original repo. In this step, we'll fork the repo to our personal profile. This gives us a personal copy that we can modify and revisit at home.
 
-1. Open the VS Code Terminal and run this command. 
+### 2.2 Fork The Repo
+
+The prebuild uses the _original repo_ but we want you to maintain a personal copy so you can make changes. This also gives you a sandbox you can revisit at home, to modify or complete at your own pace. We'll do this in two steps.
+
+1. Run this command in terminal. Complete workflow. _You just logged in with GitHub CLI_.
 
     ```bash title="" linenums="0"
     GITHUB_TOKEN="" gh auth login --hostname github.com --git-protocol https --web --scopes workflow 
     ```
 
-1. Follow the prompts to complete auth flow. You can click to expand the section below to get a visual walkthrough of these steps with screenshots, if needed.
+1. Next, run this command in terminal. _You just forked this repo into your personal profile_. 
 
-    ??? info "OPTIONAL: Expand to see the workflow  guidance with screenshots"
+    ``` title="" linenums="0"
+    GITHUB_TOKEN="" gh repo fork --remote
+    ```
+
+    ??? info "TROUBLESHOOTING: Expand this to see step-by-step guidance (with screenshots) if needed"
 
         - Copy the code in the terminal. Press Enter to get the screen below, then paste the code in.
 
@@ -82,97 +93,154 @@ The prebuilt Codespaces is running on the original repo. In this step, we'll for
 
             ![Activation](./../../../img/gh-cli-authflow.png)
 
-1. Now run this command in the terminal to fork the repo to your personal profile. 
-
-    ``` title="" linenums="0"
-    GITHUB_TOKEN="" gh repo fork --remote
-    ```
-
-!!! success "CONGRATULATIONS. You have a personal fork of the repo in your profile!"
+**Congratulations!** You now have a fork of the repo in your personal profile!
 
 ---
 
-## 4. Authenticate with Azure
+## 3. Authenticate with Azure
 
-We will be using two different tools to work with Azure for provisioning. In this step, we'll authenticate with Azure through both tools to get them ready,
+We have an active development environment connected to our personal fork of the repo. Now it's time to configure it to talk to the Azure infrastructure we pre-provisioned for you. We'll use two different tools - `az` (Azure CLI) and `azd` (Azure Developer CLI). Let's log into both.
 
-!!! warning "IMPORTANT: Do not use your personal credentials. Use the Azure Credentials from the Skillable VM page."
+!!! warning "IMPORTANT: DO NOT USE PERSONAL AZURE CREDENTIALS HERE. Instead, revisit the Skillable VM tab and look for the Azure Credentials section in the instructions pane. Use that Username and Password."
 
-### 4.1 From Azure CLI
+### 3.1 Azure CLI login
 
-1. Log into the **Azure CLI** `az` using the command below. 
+1. Run this command in terminal. Complete workflow when prompted. 
 
     ``` title="" linenums="0"
     az login --use-device-code
     ```
 
-    -  Follow the prompts to complete the authentication workflow.
-    -  Return to the VS Code terminal in GitHub Codespaces when done.
+1. You will have opened a new tab to complete auth workflow. You can close that now.
+1. Return to GitHub Codespaces tab and VS Code terminal to continue.
 
-### 4.2 From Azure Developer CLI
+### 3.2 Azure Developer CLI login
 
-1. Log into the **Azure Developer CLI** (`azd`) using the command below. 
+1. Run this command in terminal. Complete workflow when prompted. 
+
 
     ``` title="" linenums="0"
     azd auth login --use-device-code
     ```
 
-    - Follow the same process as before to complete the authentication workflow.
-    - Note: Now you will just select the Skillable login from options (no password needed)
+    !!! tip "TIP: You won't need to enter Azure credentials again. Just select the username from the previous step."
 
+1. You will have opened a new tab to complete auth workflow. You can close that now.
+1. Return to GitHub Codespaces tab and VS Code terminal to continue.
 
-!!! success "CONGRATULATIONS. You are authenticated with Azure in both `az` and `azd` tools."
+**Congratulations!** Your development environment is now connected to your Azure subscription.
 
 ---
 
-## 5. Configure Env Variables
+## 4. Configure Env Variables
 
-Skillable has pre-provisioned your infrastructure. All you need to do now are update your local environment variables to reflect the deployments. Let's do this quickly, using `azd` as follows:
+Your development environment contains the code for a working application. Your Azure subscription is pre-provisioned with required infrastructure. We need need to set those environment variables locally, for development. **The `azd` tool makes this easy**.
 
-1. Run this command in your VS Code Terminal. You should see a `.azure/` folder created.
+1. Run this command in the terminal. You should see a .azure/` folder created locally.
 
     ``` title="" linenums="0"
     azd env set AZURE_LOCATION francecentral -e AITOUR --no-prompt
     ``` 
 
-1. Run this command next. Select the default Azure subscription when prompted.
+1. Run this command, next. Select default subscription shown when prompted.
 
     ``` title="" linenums="0"
     azd env refresh -e AITOUR 
     ```
 
-1. This should have pulled down the Azure environment variables. Let's verify this
-    
-    - Open the `.azure/AITOUR/.env` file in your Visual Studio Code editor
-    - Verify that it updated with environment variables (approx. 22 variables)
+1. Open the Visual Studio Code file explorer. Look for the `.azure/AITOUR/.env` file
+1. Open the file in the editor. You should see 20+ environment variables pre-populated
 
-    !!! note  "We use  [Azure Managed Identities](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) for keyless authentication as a _security best practice_. As a result, you should not see any API keys or credentials in this list." 
+    !!! tip  "TIP: We use [Azure Managed Identities](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) for keyless authentication as a _security best practice_. Note that the environment variables do not contain any API keys or credentials, reducing leakage of secrets." 
 
-!!! success "CONGRATULATIONS. Your development environment is configured for your Azure AI project!"
+**Congratulations!** Your development environment is configured to use provisioned infrastructure.
 
 ---
 
-## 6. Upload Your Data
+## 5. Upload Your Data
 
-!!! note "This step is required ONLY in Skillable environments since resources were pre-provisioned with a non-user identity. In the self-guided track, everything is done by the user with a single `azd up` command, including the data upload, so you are all set to ideate!"
+!!! info "NOTE: This step is required only in the Skillable track and is automated for the Self-Guided option (different process)."
 
-Retrieval Augmented Generation (RAG) requires us to ground AI responses in our data. In this step, we upload our product and customer data to the Azure AI Search (index) and Azure AI CosmosDB (database) respectively. We'll complete the process in two steps:
+Retrieval Augemented Generation (RAG) requires us to ground AI responses in our data. In this step we upload the product catalog data to Azure AI Search - and create an index. We also upload the customer orders history to Azure CosmosDB - and create a database. Chat responses are now grounded in both sources.
 
-1. _Step 1:_ Update resource roles to permit user access by running this command.
+**We do this in two steps. The entire process takes 2-3 minutes to complete**.
+
+1. Run this command. This gives your user identity "write" access to those resources.
 
     ``` title="" linenums="0"
     bash ./docs/workshop/src/0-setup/azd-update-roles.sh
     ```
 
-
-1. _Step 2:_ Then upload the data to those resources by running this command.
+1. Run this command. This uploads the data and creates the index and database for you.
 
     ``` title="" linenums="0"
-    azd hooks run postprovision
+    azd hooks run postdeploy
     ```
 
-   
-!!! success "CONGRATULATIONS. You populated the data and your Skillable setup is COMPLETE!"
+**Congratulations!** You have a working application you can test now on Azure!
 
 ---
 
+## 6. Test Your Application
+
+Recall that we are building the chat AI part of Contoso Chat as shown in this architecture:
+
+![Arch diag](./../../../img/aca-architecture.png)
+
+With this setup, we've deployed an Azure Container App that contains our working application, and we've populated the data that it will use for grounded responses. **Let's validate setup quickly!**.
+
+### 6.1 View Deployed App
+
+!!! tip "TIP: To validate deployment, we'll see if the Azure Container App is live with our heartbeat message."
+
+1. Visit the link below in a browser tab → You should see `rg-AITOUR` listed.
+
+    ```  title="" linenums="0"
+    https://portal.azure.com/#browse/resourcegroups
+    ```
+    
+1. Click the `rg-AITOUR` listing  → You should see the overview page
+
+    - There should be **35 deployments** listed in _Essentials_
+    - There should be **15 records** in _Resources list_
+
+1. Look for a **Container App** resource (under Type column)
+    - Click that resource  → You'll see the Container App overview page
+    - Look for an **Application Url** under _Essentials_  → Click that link
+    - You should be taken to a page that has a message like this displayed:
+
+        ![Hello ACA](./../../../img/hello-world-aca.png)
+
+**This is a "heartbeat" message** that confirms our chat AI app was deployed and is live!
+
+
+### 6.2 Test Deployed App
+
+!!! tip "TIP: To validate data is populated, we'll test our deployed API with a question."
+
+1. Continue from previous step   → Note the page URL ends with `.azurecontainerapps.io`.
+1. Append `/docs`  → The updated link will now end with `.azurecontainerapps.io/docs`.
+1. Hit enter to navigate to _this_ new link  → This opens a Swagger page for testing as shown:
+
+    ![API ACA](./../../../img/create-responses-aca.png)
+
+1. Click the down arrow on the POST section  → You will see a **Try it out** button.
+1. Click this to make the fields below editable  → Then fill in this data.
+    - Set question to:  `Tell me about your camping stoves`
+    - Set customer id to: `1`
+    - Set chat history to: `[ ]`
+1. Click the blue Execute button to send the request with this data to that app endpoint.
+
+    ![API ACA](./../../../img/test-responses-aca.png)
+
+1. In a few seconds, the **Responses** section will update (see Screenshot below). Verify:
+
+    - You should see the **question** you posted
+    - You should see a relevant **answer**.
+    - You should see the retrieved **context** used to ground the response.
+    - You see your application Url in the green-highlighted boxes.
+
+    ![API ACA](./../../../img/view-responses-aca.png)
+
+
+!!! success "CONGRATULATIONS! You completed Provision & Setup - and validated your app works!"
