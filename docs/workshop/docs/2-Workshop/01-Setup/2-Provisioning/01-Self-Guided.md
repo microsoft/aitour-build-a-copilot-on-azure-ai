@@ -164,7 +164,7 @@ This repository is an [AI Application Template](https://aka.ms/ai-apps) that can
 1. Wait for the process to complete. It may take 15-20 minutes or more.
 1. On successful completion you will see a **`SUCCESS: ...`** message on the console.
 
-!!! success "CONGRATULATIONS. You've completed Setup! **[JUMP AHEAD TO IDEATION](./../../02-Ideate/) NEXT**."
+!!! success "CONGRATULATIONS. You've completed Setup! **[JUMP AHEAD TO IDEATION](./../../02-Ideate/index.md) NEXT**."
 
 
 
