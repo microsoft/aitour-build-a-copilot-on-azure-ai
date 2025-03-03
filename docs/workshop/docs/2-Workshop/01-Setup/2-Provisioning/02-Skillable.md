@@ -67,6 +67,8 @@ The repository is configured with a _devcontainer_ (defining the development env
 
 The prebuild uses the _original repo_ but we want you to maintain a personal copy so you can make changes. This also gives you a sandbox you can revisit at home, to modify or complete at your own pace. We'll do this in two steps.
 
+!!! tip "TIP: You will be running these commands inside GitHub Codespaces - in the active VS Code Terminal there." 
+
 1. Run this command in terminal. Complete workflow. _You just logged in with GitHub CLI_.
 
     ```bash title="" linenums="0"
@@ -79,7 +81,7 @@ The prebuild uses the _original repo_ but we want you to maintain a personal cop
     GITHUB_TOKEN="" gh repo fork --remote
     ```
 
-    ??? info "TROUBLESHOOTING: Expand this to see step-by-step guidance (with screenshots) if needed"
+    ??? quote "TROUBLESHOOTING: Expand this to see step-by-step guidance (with screenshots) - if needed"
 
         - Copy the code in the terminal. Press Enter to get the screen below, then paste the code in.
 
@@ -99,13 +101,16 @@ The prebuild uses the _original repo_ but we want you to maintain a personal cop
 
 ## 3. Authenticate with Azure
 
+!!! warning "IMPORTANT: USE THE SKILLABLE PROVIDED AZURE CREDENTIALS FOR AUTHENTICATION. Do not use your own (personal or company) account."
+
 We have an active development environment connected to our personal fork of the repo. Now it's time to configure it to talk to the Azure infrastructure we pre-provisioned for you. We'll use two different tools - `az` (Azure CLI) and `azd` (Azure Developer CLI). Let's log into both.
 
-!!! warning "IMPORTANT: DO NOT USE PERSONAL AZURE CREDENTIALS HERE. Instead, revisit the Skillable VM tab and look for the Azure Credentials section in the instructions pane. Use that Username and Password."
 
 ### 3.1 Azure CLI login
 
 1. Run this command in terminal. Complete workflow when prompted. 
+
+    !!! info "You will need the Azure Credentials (Username, password) from the Skillable VM tab for this step!"
 
     ``` title="" linenums="0"
     az login --use-device-code
@@ -118,12 +123,12 @@ We have an active development environment connected to our personal fork of the 
 
 1. Run this command in terminal. Complete workflow when prompted. 
 
+    !!! tip "TIP: You won't need to enter Azure credentials again - just select the account you logged into in the last step!"
 
     ``` title="" linenums="0"
     azd auth login --use-device-code
     ```
 
-    !!! tip "TIP: You won't need to enter Azure credentials again. Just select the username from the previous step."
 
 1. You will have opened a new tab to complete auth workflow. You can close that now.
 1. Return to GitHub Codespaces tab and VS Code terminal to continue.
@@ -199,10 +204,14 @@ With this setup, we've deployed an Azure Container App that contains our working
     https://portal.azure.com/#browse/resourcegroups
     ```
     
-1. Click the `rg-AITOUR` listing  → You should see the overview page
+1. Click the `rg-AITOUR` listing  → You should see the overview page as shown:
 
-    - There should be **35 deployments** listed in _Essentials_
-    - There should be **15 records** in _Resources list_
+    ![Hello RG](./../../../img//validation-aitour.png)
+
+1. Verify that your resources were provisioned by looking for the highlighted areas:
+
+    - There should be **35 deployments** (listed under _Essentials_ - area 1)
+    - There should be **15 records** (listed in _Resources list_ - area 2)
 
 1. Look for a **Container App** resource (under Type column)
     - Click that resource  → You'll see the Container App overview page
