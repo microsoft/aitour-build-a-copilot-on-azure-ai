@@ -45,7 +45,7 @@ Implement a RAG-based copilot end-to-end with Prompty and Azure AI Foundry
 | Chat AI - Backend App | Prompty, FastAPI, Docker container |
 | Chat UI - Frontend App | Next.js, Node.js, npm (in _Contoso Web_) |
 | Azure Infra Provisioning | Azure CLI, Azure Developer CLI, Bicep template |
-| Azure Resources (AI) | Azure AI hub, Azure AI project, Azure Open AI service|
+| Azure Resources (AI) | Azure AI hub, Azure AI project, Azure OpenAI service|
 | Azure Resources (other) | Azure AI Search, Azure CosmosDB, Azure Container Apps |
 | Azure OpenAI Models | gpt-35-turbo, gpt-4, text-embedding-ada002|
 | Observability | Prompty Tracing, Azure App Insights, Open Telemetry|
