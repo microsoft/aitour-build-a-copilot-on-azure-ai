@@ -71,7 +71,7 @@ Here's a reminder of the Azure Application Architecture - let's check our provis
 
 ## 3.3. Check Azure Cosmos DB
 
-The Azure CosmosDB resource holds the customer data for our application. It is a noSQL database that contains JSON data for each customer, and the prior purchases they made.
+The Azure CosmosDB resource holds the customer data for our application. It is a NoSQL database that contains JSON data for each customer, and the prior purchases they made.
 
 1. Switch to the **Azure Portal** tab and display the `rg-AITOUR` resource group Overview
 1. **Click** the `Azure Cosmos DB account` resource name to visit its details page
